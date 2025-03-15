@@ -7,7 +7,7 @@ def problem1(n:int,steps:int=0) -> int:
         return problem1(3*n+1,steps+1)
 
 def reverse_line(name:str):
-    op_file="reverse_lines_op.txt"
+    op_file=(str)name+"_op.txt"
     with open(name,"r") as infile,open(op_file,"w") as outfile:
         for line in infile:
             
